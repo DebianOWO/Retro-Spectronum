@@ -1,0 +1,43 @@
+body{
+    background-color: #0c0c0c;
+}
+body .main{
+    box-shadow: #101010 0px 0px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 17.75%;
+    left: 15%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    width: 60%;
+}
+body .main logo{
+    font-size: 11vw;
+    color: #c99f9d;
+    text-shadow: #c99f9d 0px 0px 70px;
+}
+body .main .lnks ul{
+    padding: 40px;
+}
+body .main .lnks ul li{
+    padding: 20px;
+    list-style: none;
+}
+.main a{
+    transition: 0.3s;
+
+    text-decoration: none;
+
+    font-family: scientifica;
+    font-size: 20px;
+    color: #c99f9d;
+    text-shadow: #c99f9d 0px 0px 15px;
+}
+.main a:hover{
+    transition: 0.9s;
+    color: #fff;
+    text-shadow: #fff 0px 0px 20px;
+}
