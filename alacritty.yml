@@ -1,0 +1,100 @@
+#Alacritty:
+
+env:
+  TERM: alacritty
+
+window:
+  opacity: 1.0
+  padding:
+    x: 50
+    y: 50
+
+    dynamic_padding:  true
+    decoration: none
+
+font:
+  normal:
+    family: Scientifica
+
+  bold:
+    family: Scientifica
+
+  italic:
+    family: Scientifica
+
+  bold_italic:
+    family: Scientifica
+
+  size: 7.5
+
+colors:
+  # Default colors
+  primary:
+#    background: '0x181a20'
+#    background: '#1C2427'
+    background: '#101010'
+    foreground: '#c9c5c1'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '#e0e0e0'
+    cursor: '#737373'
+
+  # Normal colors
+  normal:
+    black:   '#101010'
+    red:     '#c99f9d'
+    green:   '#a5c99d'
+    yellow:  '#c9c19d'
+    blue:    '#9db3c9'
+    magenta: '#c79dbf'
+#    cyan:    '#bfcddb'
+    cyan:    '#abc6d1'
+    white:   '0xeeffff'
+
+  # Bright colors
+  bright:
+#    black:   '0x4a4a4a'
+#    red:     '0xf07178'
+#    green:   '0xc3e88d'
+#    yellow:  '0xffcb6b'
+#    blue:    '0x82aaff'
+#    magenta: '0xc792ea'
+#    cyan:    '0x89ddff'
+#    white:   '0xffffff'
+    black:   '#101010'
+    red:     '#c99f9d'
+    green:   '#a5c99d'
+    yellow:  '#c9c19d'
+    blue:    '#9db3c9'
+    magenta: '#c79dbf'
+#    cyan:    '#bfcddb'
+    cyan:    '#abc6d1'
+    white:   '0xeeffff'
+
+  indexed_colors:
+    - { index: 16, color: '0xf78c6c' }
+    - { index: 17, color: '0xff5370' }
+    - { index: 18, color: '0x303030' }
+    - { index: 19, color: '0x353535' }
+    - { index: 20, color: '0xb2ccd6' }
+    - { index: 21, color: '0xeeffff' }
+
+# cursor:
+#    style: 
+#   unfocused_hollow: false
+
+cursor:
+  style:
+    shape: Beam
+    nano_mode_style: Beam
+
+live_config_reload: true
+                 
+key_bindings:
+
+  - { key: Key0, mods: Control, action: ResetFontSize }
+
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
